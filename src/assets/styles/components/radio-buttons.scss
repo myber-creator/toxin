@@ -53,7 +53,7 @@
         top: 50%;
         left: 50%;
 
-        background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+        background: $Gradient;
 
         transform: translate(-50%, -50%);
     }

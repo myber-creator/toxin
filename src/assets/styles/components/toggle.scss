@@ -54,7 +54,7 @@
 
     &__checkbox:checked::after {
         left: calc(100% - 16px);
-        background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+        background: $Gradient;
     }
 
     &__text {
