@@ -1,0 +1,6 @@
+@import "../../styles/components/text-field.scss";
+
+.text-field{
+    @include text-field;
+    position: relative;
+}

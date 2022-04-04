@@ -1,0 +1,13 @@
+@import '../components/text-field/text-filed.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $Dark-50;
+}

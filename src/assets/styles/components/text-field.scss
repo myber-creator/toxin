@@ -1,0 +1,30 @@
+@import "../utilities/vars";
+
+@mixin text-field {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+
+    border: 1px solid $Dark-25;
+    border-radius: 4px;
+
+    padding: 0 15px;
+
+    transition: border .2s linear;
+
+    &::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+
+        transition: color .2s linear;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid $Dark-50;
+
+        &::placeholder {
+           color: $Dark-75;
+        }
+    }
+}
