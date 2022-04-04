@@ -1,0 +1,64 @@
+@import '../utilities/vars';
+
+@mixin radio-buttons {
+    display: flex;
+    gap: 20px;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__input {
+        position: relative;
+
+        appearance: none;
+        -webkit-appearance: none;
+
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+
+        cursor: pointer;
+    }
+
+    &__input::before,
+    &__input::after {
+        content: '';
+
+        position: absolute;
+        z-index: 10 ;
+
+        border-radius: 50%;
+    }
+
+    &__input::before {
+        box-sizing: border-box;
+
+        width: 20px;
+        height: 20px;
+
+        top: 0;
+        left: 0;
+
+        border: 1px solid #BC9CFF;
+    }
+
+    &__input::after {
+        display: none;
+
+        width: 12px;
+        height: 12px;
+
+        top: 50%;
+        left: 50%;
+
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+        transform: translate(-50%, -50%);
+    }
+
+    &__input:checked::after {
+        display: block;
+    }
+}

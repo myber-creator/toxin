@@ -1,0 +1,5 @@
+@import "../../styles/components/radio-buttons";
+
+.radio {
+    @include radio-buttons;
+}
