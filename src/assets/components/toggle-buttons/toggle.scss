@@ -1,5 +1,12 @@
 @import '../../styles/components/toggle';
 
 .toggle {
+    display: flex;
+    align-items: center;
+
     @include toggle;
+
+    &__text {
+        margin-left: 10px;
+    }
 }

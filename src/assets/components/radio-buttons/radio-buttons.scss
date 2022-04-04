@@ -1,5 +1,17 @@
 @import "../../styles/components/radio-buttons";
 
 .radio {
+    display: flex;
+    gap: 20px;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+    }
+
     @include radio-buttons;
+
+    &__text {
+        margin-left: 10px;
+    }
 }

@@ -1,9 +1,6 @@
 @import "../utilities/vars";
 
 @mixin toggle {
-    display: flex;
-    align-items: center;
-
     &__checkbox {
         appearance: none;
         -webkit-appearance: none;
@@ -55,9 +52,5 @@
     &__checkbox:checked::after {
         left: calc(100% - 16px);
         background: $Gradient;
-    }
-
-    &__text {
-        margin-left: 10px;
     }
 }
