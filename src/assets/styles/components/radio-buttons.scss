@@ -17,7 +17,7 @@
 
         width: 20px;
         height: 20px;
-        margin: 0 10px;
+        margin: 0;
 
         cursor: pointer;
     }
@@ -41,7 +41,7 @@
         top: 0;
         left: 0;
 
-        border: 1px solid #BC9CFF;
+        border: 1px solid $Purple;
     }
 
     &__input::after {
@@ -53,12 +53,16 @@
         top: 50%;
         left: 50%;
 
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
 
         transform: translate(-50%, -50%);
     }
 
     &__input:checked::after {
         display: block;
+    }
+
+    &__text {
+        margin-left: 10px;
     }
 }

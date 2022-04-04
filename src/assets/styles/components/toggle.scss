@@ -1,0 +1,63 @@
+@import "../utilities/vars";
+
+@mixin toggle {
+    display: flex;
+    align-items: center;
+
+    &__checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+
+        position: relative;
+        width: 40px;
+        height: 20px;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    &__checkbox::before,
+    &__checkbox::after {
+        box-sizing: border-box;
+        content: "";
+        position: absolute;
+    }
+
+    &__checkbox::before {
+        top: 0;
+        left: 0;
+
+        width: inherit;
+        height: inherit;
+
+        border-radius: 10px;
+        border: 1px solid $Dark-25;
+
+        transition: border .2s linear;
+    }
+
+    &__checkbox::after {
+        width: 12px;
+        height: 12px;
+        background: $Dark-25;
+        border-radius: 50%;
+        top: 50%;
+        left: 4px;
+
+        transform: translateY(-50%);
+        transition: background .2s linear, left .2s linear;
+    }
+
+    &__checkbox:checked::before {
+        border-color: $Purple;
+    }
+
+    &__checkbox:checked::after {
+        left: calc(100% - 16px);
+        background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+    }
+
+    &__text {
+        margin-left: 10px;
+    }
+}
