@@ -1,0 +1,16 @@
+@import "../../styles/components/text-field";
+
+.text-field {
+    @include text-field;
+
+    &--masked {
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            &::placeholder {
+                color: $Dark-25;
+            }
+        }
+    }
+}

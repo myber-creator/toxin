@@ -10,8 +10,10 @@ html(lang="ru")
         include ./assets/components/bullet-list/bullet-list.pug
         include ./assets/components/radio-buttons/radio-buttons.pug
         include ./assets/components/toggle-buttons/toggle.pug
+        include ./assets/components/masked-text-field/masked-text-field.pug
 
         +text-field('Email')
         +bullet-list(['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
         +radio-buttons
         +toggle('Получать спецпредложения')
+        +masked-text-field('дд.мм.гггг')
