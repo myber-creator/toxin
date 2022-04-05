@@ -3,7 +3,9 @@
 @import '../components/radio-buttons/radio-buttons.scss';
 @import '../components/toggle-buttons/toggle.scss';
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 

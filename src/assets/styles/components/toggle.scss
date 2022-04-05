@@ -15,7 +15,6 @@
 
     &__checkbox::before,
     &__checkbox::after {
-        box-sizing: border-box;
         content: "";
         position: absolute;
     }
