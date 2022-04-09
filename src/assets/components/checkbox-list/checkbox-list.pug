@@ -1,10 +1,10 @@
 include ../checkbox/checkbox.pug
 
-mixin checkbox-list(properties)
+mixin checkbox-list(options)
     .checkbox-list
-        each val, index in properties.labels
+        each val, index in options.labels
             label.checkbox-list__item
-                if (properties.checked.includes(index))
+                if (options.checked.includes(index))
                     +checkbox('checkbox-list__input', true)
                 else
                     +checkbox('checkbox-list__input')

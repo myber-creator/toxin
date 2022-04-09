@@ -1,0 +1,28 @@
+.button-border {
+    $border: 2px;
+
+    display: inline-block;
+
+    color: $Purple;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.63px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: calc(15px - $border) calc(19px - $border);
+    background:
+        linear-gradient(white, white) padding-box,
+        $Gradient border-box;
+    border-radius: 22px;
+    border: $border solid transparent;
+
+    cursor: pointer;
+
+    transition: opacity .2s linear;
+
+    &:hover {
+        opacity: .5;
+    }
+}

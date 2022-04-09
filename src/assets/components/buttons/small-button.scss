@@ -1,0 +1,24 @@
+.small-button {
+    display: inline-block;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.63px;
+    color: $Purple;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: $Dark-50;
+    }
+}

@@ -14,6 +14,10 @@ html(lang="ru")
         include ./assets/components/benefites/benefites.pug
         include ./assets/components/checkbox-list/checkbox-list.pug
         include ./assets/components/expandable-checkbox-list/expandable-checkbox-list.pug
+        include ./assets/components/buttons/small-button.pug
+        include ./assets/components/buttons/button-filled.pug
+        include ./assets/components/buttons/button-border.pug
+        include ./assets/components/buttons/big-button.pug
 
         +text-field('Email')
         +bullet-list(['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
@@ -35,3 +39,10 @@ html(lang="ru")
             checked: [0, 1]
         })
         +expandable-checkbox-list('Expandable checkbox list')
+        +small-button('click me')
+        +button-filled('click me')
+        +button-border('click me')
+        +big-button({
+            text: 'перейти к оплате',
+            link: '/pages/search.html'
+        })
