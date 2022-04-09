@@ -1,0 +1,25 @@
+@import '../../styles/utilities/vars';
+
+.checkbox-list {
+    width: 100%;
+    max-width: 222px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item + &__item {
+        margin-top: 13px;
+    }
+
+    &__input {
+        align-self: flex-start;
+        flex-shrink: 0;
+    }
+
+    &__label {
+        line-height: 18px;
+        margin-left: 10px;
+    }
+}

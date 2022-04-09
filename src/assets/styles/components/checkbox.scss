@@ -1,0 +1,19 @@
+@import '../../styles/utilities/vars';
+
+@mixin checkbox {
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 4px;
+    border: 1px solid $Dark-25;
+
+    cursor: pointer;
+
+    &:checked {
+        border-color: $Purple;
+        background: url('/assets/img/icons/done-checkbox.svg') no-repeat center;
+    }
+}

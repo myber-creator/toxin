@@ -11,9 +11,27 @@ html(lang="ru")
         include ./assets/components/radio-buttons/radio-buttons.pug
         include ./assets/components/toggle-buttons/toggle.pug
         include ./assets/components/masked-text-field/masked-text-field.pug
+        include ./assets/components/benefites/benefites.pug
+        include ./assets/components/checkbox-list/checkbox-list.pug
+        include ./assets/components/expandable-checkbox-list/expandable-checkbox-list.pug
 
         +text-field('Email')
         +bullet-list(['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
         +radio-buttons
         +toggle('Получать спецпредложения')
         +masked-text-field('дд.мм.гггг')
+        +benefites([{
+            title: 'Комфорт',
+            text: 'Шумопоглощающие стены',
+            logo: 'emoticon.svg'
+        },
+        {
+            title: 'Удобство',
+            text: 'Окно в каждой из спален',
+            logo: 'city.svg'
+        }])
+        +checkbox-list({
+            labels: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'],
+            checked: [0, 1]
+        })
+        +expandable-checkbox-list('Expandable checkbox list')

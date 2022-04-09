@@ -1,0 +1,34 @@
+@import '../../styles/utilities/vars';
+
+.benefites {
+
+    margin-top: 20px;
+
+    .benefit {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 17px;
+
+        width: 100%;
+        max-width: 280px;
+
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+
+        &:not(:last-of-type) {
+            margin-bottom: 23px;
+        }
+
+        &__logo {
+            max-width: 48px;
+            width: 100%;
+            height: auto;
+            object-fit: none;
+        }
+
+        &__title {
+            color: $Dark-75;
+            font-weight: 700;
+        }
+    }
+}

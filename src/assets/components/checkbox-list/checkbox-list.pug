@@ -1,0 +1,11 @@
+include ../checkbox/checkbox.pug
+
+mixin checkbox-list(properties)
+    .checkbox-list
+        each val, index in properties.labels
+            label.checkbox-list__item
+                if (properties.checked.includes(index))
+                    +checkbox('checkbox-list__input', true)
+                else
+                    +checkbox('checkbox-list__input')
+                .checkbox-list__label= val
